@@ -35,7 +35,7 @@
 				<?php endforeach; ?>
 
 				<p class="article-back-link">
-					<a class="text-link" href="articles.php">&larr; Takaisin artikkeleihin</a>
+					<a class="text-link" href="../articles.php">&larr; Takaisin artikkeleihin</a>
 				</p>
 			</div>
 		</div>

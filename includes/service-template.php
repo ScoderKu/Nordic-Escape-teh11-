@@ -45,7 +45,7 @@ require __DIR__ . '/header.php';
 		<div class="container">
 			<h2>Kiinnostuitko?</h2>
 			<p>Ota yhteyttä ja kysy lisää Nordic Escapen elämyksistä.</p>
-			<a class="button button-primary" href="contact.html">Ota yhteyttä</a>
+			<a class="button button-primary" href="../contact.php">Ota yhteyttä</a>
 		</div>
 	</section>
 </main>
