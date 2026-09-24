@@ -124,7 +124,6 @@ function closeGalleryLightbox() {
 const contactForm = document.querySelector("#contact-form");
 
 if (contactForm) {
-document.querySelector("#privacy-error").textContent =
 	contactForm.addEventListener("submit", function (event) {
 		event.preventDefault();
 		clearFormErrors();
@@ -236,4 +235,34 @@ function clearFormErrors() {
 	if (formStatus) {
 		formStatus.textContent = "";
 	}
+}
+
+// =========================
+// FAQ accordion
+// =========================
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+if (faqQuestions.length > 0) {
+	faqQuestions.forEach(function (question) {
+		question.addEventListener("click", function () {
+			const answerId = question.getAttribute("aria-controls");
+			const answer = document.querySelector("#" + answerId);
+
+			if (!answer) {
+				return;
+			}
+
+			const isOpen = question.getAttribute("aria-expanded") === "true";
+
+			question.setAttribute("aria-expanded", String(!isOpen));
+			answer.hidden = isOpen;
+
+			const icon = question.querySelector(".faq-icon");
+
+			if (icon) {
+				icon.textContent = isOpen ? "+" : "−";
+			}
+		});
+	});
 }
