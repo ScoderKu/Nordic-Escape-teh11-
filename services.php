@@ -1,5 +1,4 @@
 <?php
-\n+$pageTitle = 'Palvelut';
 $basePath = '';
 
 require 'includes/header.php';

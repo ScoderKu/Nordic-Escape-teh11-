@@ -370,8 +370,9 @@ h3 {
 }
 
 /* =========================
-Article search
-========================= */
+   Article search
+   ========================= */
+
 .article-search {
 	max-width: 650px;
 	margin-bottom: 2rem;
@@ -403,4 +404,244 @@ Article search
 	margin-bottom: 0;
 	color: #52705c;
 	font-size: 0.95rem;
+}
+
+/* =========================
+	 Gallery
+	 ========================= */
+
+.gallery-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+}
+
+.gallery-item {
+	margin: 0;
+}
+
+.gallery-button {
+	display: block;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	border-radius: 0.6rem;
+	cursor: pointer;
+	background: none;
+}
+
+.gallery-button img {
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	transition: transform 0.25s ease;
+}
+
+.gallery-button:hover img {
+	transform: scale(1.03);
+}
+
+.gallery-button:focus-visible {
+	outline: 3px solid #244a38;
+	outline-offset: 4px;
+}
+
+.gallery-item figcaption {
+	margin-top: 0.6rem;
+	color: #252b28;
+	font-weight: bold;
+}
+
+/* =========================
+	 Lightbox
+	 ========================= */
+
+.lightbox {
+	position: fixed;
+	z-index: 1000;
+	inset: 0;
+	padding: 1rem;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+.lightbox:not([hidden]) {
+	display: grid;
+	place-items: center;
+}
+
+.lightbox-content {
+	position: relative;
+	width: min(100%, 1000px);
+	max-height: 90vh;
+	padding: 1rem;
+	border-radius: 0.6rem;
+	color: #ffffff;
+	background-color: #182d23;
+}
+
+.lightbox-content img {
+	width: 100%;
+	max-height: 75vh;
+	object-fit: contain;
+}
+
+.lightbox-content p {
+	margin: 0.8rem 0 0;
+	text-align: center;
+}
+
+.lightbox-close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.75rem;
+	width: 2.75rem;
+	height: 2.75rem;
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.65);
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.lightbox-close:focus-visible {
+	outline: 3px solid #e8dfc9;
+	outline-offset: 3px;
+}
+
+/* =========================
+	 Gallery tablet
+	 ========================= */
+
+@media (min-width: 768px) {
+	.gallery-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* =========================
+	 Gallery desktop
+	 ========================= */
+
+@media (min-width: 1024px) {
+	.gallery-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* =========================
+	 Contact
+	 ========================= */
+
+.contact-layout {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
+}
+
+.contact-intro {
+	max-width: 600px;
+}
+
+.contact-details {
+	margin-top: 2rem;
+}
+
+.contact-form-wrapper {
+	width: 100%;
+	max-width: 700px;
+}
+
+.contact-form {
+	padding: 1.5rem;
+	border-radius: 0.6rem;
+	background-color: #ffffff;
+}
+
+/* =========================
+	 Form fields
+	 ========================= */
+
+.form-field {
+	margin-bottom: 1.5rem;
+}
+
+.form-field label {
+	display: block;
+	margin-bottom: 0.4rem;
+	font-weight: bold;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+	width: 100%;
+	padding: 0.8rem 1rem;
+	border: 2px solid #b7bdb9;
+	border-radius: 0.4rem;
+	color: #252b28;
+	background-color: #ffffff;
+	font: inherit;
+}
+
+.form-field textarea {
+	resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+	border-color: #244a38;
+	outline: 3px solid rgba(36, 74, 56, 0.2);
+	outline-offset: 1px;
+}
+
+/* Checkbox */
+
+.form-checkbox {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+}
+
+.form-checkbox input {
+	width: auto;
+	margin-top: 0.35rem;
+}
+
+.form-checkbox label {
+	margin: 0;
+}
+
+/* Validation */
+
+.form-error {
+	min-height: 1.4rem;
+	margin: 0.35rem 0 0;
+	color: #a52a2a;
+	font-size: 0.9rem;
+}
+
+.form-field input.input-error,
+.form-field select.input-error,
+.form-field textarea.input-error {
+	border-color: #a52a2a;
+}
+
+.form-status {
+	margin-top: 1rem;
+	font-weight: bold;
+}
+
+/* =========================
+	 Contact desktop
+	 ========================= */
+
+@media (min-width: 1024px) {
+	.contact-layout {
+		grid-template-columns: 1fr 1.2fr;
+		align-items: start;
+	}
 }
