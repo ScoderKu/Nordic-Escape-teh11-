@@ -68,11 +68,11 @@ Nordic Escape on verkkosivusto, joka esittelee pohjoisen luonnon matkakohteita j
 
 ## Nykyiset rajoitukset
 
-- Tämä on vain prototyyppi, joten siitä puuttuu tällä hetkellä:
-  *Käyttäjätilit, tietokannat, varausjärjestelmät tai maksutoiminto.
-  *Yhteydenottolomake tarkistaa tiedot ja näyttää ilmoitukse.
-  *Palvelujen osallistumisvaatimuksia, varusteiden vuokrausta sekä sää- ja peruutuskäytäntöjä ei ole vielä määritelty kaikilta osin.
-  *Projektissa ei ole analytiikkaa eikä evästeitä käyttäviä toimintoja.
+Tämä on vain prototyyppi, joten siitä puuttuu tällä hetkellä:
+- Käyttäjätilit, tietokannat, varausjärjestelmät tai maksutoiminto.
+- Yhteydenottolomake tarkistaa tiedot ja näyttää ilmoitukse.
+- Palvelujen osallistumisvaatimuksia, varusteiden vuokrausta sekä sää- ja peruutuskäytäntöjä ei ole vielä määritelty kaikilta osin.
+- Projektissa ei ole analytiikkaa eikä evästeitä käyttäviä toimintoja.
 
 ## Mahdollisia jatkokehityskohteita
 
