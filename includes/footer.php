@@ -8,18 +8,18 @@
 		<div>
 			<h3>Navigaatio</h3>
 			<ul>
-				<li><a href="index.html">Etusivu</a></li>
-				<li><a href="services.php">Palvelut</a></li>
-				<li><a href="articles.php">Artikkelit</a></li>
-				<li><a href="gallery.php">Galleria</a></li>
+				<li><a href="<?= htmlspecialchars($basePath) ?>index.html">Etusivu</a></li>
+				<li><a href="<?= htmlspecialchars($basePath) ?>services.php">Palvelut</a></li>
+				<li><a href="<?= htmlspecialchars($basePath) ?>articles.php">Artikkelit</a></li>
+				<li><a href="<?= htmlspecialchars($basePath) ?>gallery.php">Galleria</a></li>
 			</ul>
 		</div>
 
 		<div>
 			<h3>Tietoa</h3>
 			<ul>
-				<li><a href="faq.php">FAQ</a></li>
-				<li><a href="contact.php">Yhteystiedot</a></li>
+				<li><a href="<?= htmlspecialchars($basePath) ?>faq.php">FAQ</a></li>
+				<li><a href="<?= htmlspecialchars($basePath) ?>contact.php">Yhteystiedot</a></li>
 				<li><a href="<?= htmlspecialchars($basePath) ?>privacy.php">Tietosuoja</a></li>
 			</ul>
 		</div>
@@ -30,7 +30,7 @@
 	</div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="<?= htmlspecialchars($basePath) ?>js/main.js"></script>
 
 </body>
 </html>

@@ -7,42 +7,42 @@ require 'includes/header.php';
 
 $galleryImages = [
 	[
-		'src' => '/images/gallery/hiking.jpg',
+		'src' => $basePath . 'images/gallery/hiking.jpg',
 		'alt' => 'Retkeilijä luonnon keskellä',
 		'caption' => 'Retkeily',
 	],
 	[
-		'src' => '/images/gallery/lake.jpg',
+		'src' => $basePath . 'images/gallery/lake.jpg',
 		'alt' => 'Järvimaisema suomalaisessa luonnossa',
 		'caption' => 'Järvimaisema',
 	],
 	[
-		'src' => '/images/gallery/kayaking.jpg',
+		'src' => $basePath . 'images/gallery/kayaking.jpg',
 		'alt' => 'Meloja järvellä',
 		'caption' => 'Melonta',
 	],
 	[
-		'src' => '/images/gallery/forest.jpg',
+		'src' => $basePath . 'images/gallery/forest.jpg',
 		'alt' => 'Vihreä metsämaisema',
 		'caption' => 'Metsä',
 	],
 	[
-		'src' => '/images/gallery/cycling.jpg',
+		'src' => $basePath . 'images/gallery/cycling.jpg',
 		'alt' => 'Maastopyöräilijä metsäpolulla',
 		'caption' => 'Maastopyöräily',
 	],
 	[
-		'src' => '/images/gallery/winter.jpg',
+		'src' => $basePath . 'images/gallery/winter.jpg',
 		'alt' => 'Luminen metsä talvella',
 		'caption' => 'Talvi',
 	],
 	[
-		'src' => '/images/gallery/campfire.jpg',
+		'src' => $basePath . 'images/gallery/campfire.jpg',
 		'alt' => 'Nuotio luonnon keskellä',
 		'caption' => 'Luontoelämys',
 	],
 	[
-		'src' => '/images/gallery/landscape.jpg',
+		'src' => $basePath . 'images/gallery/landscape.jpg',
 		'alt' => 'Pohjoismainen luontomaisema',
 		'caption' => 'Pohjoisen maisemat',
 	],
@@ -108,6 +108,7 @@ $galleryImages = [
 		>
 			&times;
 		</button>
+			<img id="lightbox-image" alt="">
 		<p id="lightbox-caption"></p>
 	</div>
 </div>

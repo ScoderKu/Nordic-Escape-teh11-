@@ -13,7 +13,7 @@ $basePath = $basePath ?? '';
 	<link rel="stylesheet" href="<?= htmlspecialchars($basePath) ?>css/style.css">
 </head>
 
-<body>
+<body data-page="<?= htmlspecialchars(basename($_SERVER['SCRIPT_NAME'] ?? ''), ENT_QUOTES, 'UTF-8') ?>">
 
 	<header class="site-header">
 		<div class="container header-container">

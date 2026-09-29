@@ -183,7 +183,7 @@ if (contactForm) {
 		// Result
 		if (formIsValid) {
 			formStatus.textContent =
-				"Lomake on täytetty oikein. Viestin lähetys toteutetaan myöhemmin palvelinpuolella.";
+				"Lomaketta ei vielä voi lähettää. Ota yhteyttä sähköpostitse osoitteeseen Khoi@nordicescape.fi.";
 		} else {
 			formStatus.textContent = "Tarkista lomakkeen tiedot.";
 			const firstError = contactForm.querySelector(".input-error");

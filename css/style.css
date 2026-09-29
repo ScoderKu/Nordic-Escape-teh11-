@@ -85,6 +85,182 @@ a {
 		radial-gradient(circle at 80% 20%, #799a86, #183f3a 60%);
 }
 
+.home-hero,
+.home-services,
+.home-inspiration,
+.home-cta {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+}
+
+.home-hero::before,
+.home-services::before,
+.home-inspiration::before,
+.home-cta::before {
+	position: absolute;
+	z-index: -1;
+	inset: -3%;
+	content: "";
+	background-position: center;
+	background-size: cover;
+	animation: home-image-float 26s ease-in-out infinite alternate;
+}
+
+.home-hero::before {
+	background-image:
+		linear-gradient(110deg, rgba(24, 63, 58, 0.82), rgba(24, 63, 58, 0.45)),
+		url("../images/services/hiking.jpg");
+	background-position: center, center 52%;
+}
+
+.home-services::before {
+	background-image:
+		linear-gradient(rgba(247, 245, 239, 0.88), rgba(247, 245, 239, 0.9)),
+		url("../images/gallery/lake.jpg");
+}
+
+.home-inspiration::before {
+	background-image:
+		linear-gradient(rgba(223, 234, 228, 0.9), rgba(223, 234, 228, 0.92)),
+		url("../images/articles/forest.jpg");
+}
+
+.home-cta::before {
+	background-image:
+		linear-gradient(110deg, rgba(24, 63, 58, 0.92), rgba(24, 63, 58, 0.78)),
+		url("../images/gallery/campfire.jpg");
+}
+
+@keyframes home-image-float {
+	from {
+		transform: scale(1.03) translateY(0);
+	}
+
+	to {
+		transform: scale(1.08) translateY(-0.7%);
+	}
+}
+
+body[data-page="services.php"] {
+	--page-photo: url("../images/services/hiking.jpg");
+}
+
+body[data-page="articles.php"] {
+	--page-photo: url("../images/articles/forest.jpg");
+}
+
+body[data-page="contact.php"] {
+	--page-photo: url("../images/gallery/campfire.jpg");
+}
+
+body[data-page="faq.php"] {
+	--page-photo: url("../images/articles/hiking-safety.jpg");
+}
+
+body[data-page="gallery.php"] {
+	--page-photo: url("../images/gallery/landscape.jpg");
+}
+
+body[data-page="privacy.php"] {
+	--page-photo: url("../images/articles/forest.jpg");
+}
+
+body[data-page="hiking.php"] {
+	--page-photo: url("../images/services/hiking.jpg");
+}
+
+body[data-page="kayaking.php"] {
+	--page-photo: url("../images/services/kayaking.jpg");
+}
+
+body[data-page="mountain-biking.php"] {
+	--page-photo: url("../images/services/mountain-biking.jpg");
+}
+
+body[data-page="winter.php"] {
+	--page-photo: url("../images/services/winter.jpg");
+}
+
+body[data-page="outdoor-courses.php"] {
+	--page-photo: url("../images/services/outdoor-courses.jpg");
+}
+
+body[data-page="beginner-hiking.php"] {
+	--page-photo: url("../images/articles/hiking.jpg");
+}
+
+body[data-page="day-trip-equipment.php"] {
+	--page-photo: url("../images/articles/day-trip-equipment.jpg");
+}
+
+body[data-page="hiking-safe.php"] {
+	--page-photo: url("../images/articles/hiking-safety.jpg");
+}
+
+body[data-page="winter-hiking.php"] {
+	--page-photo: url("../images/articles/winter-hiking.jpg");
+}
+
+body[data-page="destinations-finland.php"] {
+	--page-photo: url("../images/articles/forest.jpg");
+}
+
+body[data-page]:not([data-page="index.html"]) main > .hero,
+body[data-page]:not([data-page="index.html"]) main > .section,
+body[data-page]:not([data-page="index.html"]) main > .cta,
+body[data-page]:not([data-page="index.html"]) main > article > .article-hero,
+body[data-page]:not([data-page="index.html"]) main > article > .article-layout {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+}
+
+body[data-page]:not([data-page="index.html"]) main > .hero::before,
+body[data-page]:not([data-page="index.html"]) main > .section::before,
+body[data-page]:not([data-page="index.html"]) main > .cta::before,
+body[data-page]:not([data-page="index.html"]) main > article > .article-hero::before,
+body[data-page]:not([data-page="index.html"]) main > article > .article-layout::before {
+	position: absolute;
+	z-index: -1;
+	inset: -3%;
+	content: "";
+	background-position: center;
+	background-size: cover;
+	animation: home-image-float 26s ease-in-out infinite alternate;
+}
+
+body[data-page]:not([data-page="index.html"]) main > .hero::before {
+	background-image:
+		linear-gradient(110deg, rgba(24, 63, 58, 0.82), rgba(24, 63, 58, 0.45)),
+		var(--page-photo);
+}
+
+body[data-page]:not([data-page="index.html"]) main > .section::before,
+body[data-page]:not([data-page="index.html"]) main > article > .article-layout::before {
+	background-image:
+		linear-gradient(rgba(247, 245, 239, 0.9), rgba(247, 245, 239, 0.92)),
+		var(--page-photo);
+}
+
+body[data-page]:not([data-page="index.html"]) main > .section-light::before {
+	background-image:
+		linear-gradient(rgba(223, 234, 228, 0.9), rgba(223, 234, 228, 0.92)),
+		var(--page-photo);
+}
+
+body[data-page]:not([data-page="index.html"]) main > .cta::before {
+	background-image:
+		linear-gradient(110deg, rgba(24, 63, 58, 0.92), rgba(24, 63, 58, 0.78)),
+		var(--page-photo);
+}
+
+body[data-page]:not([data-page="index.html"]) main > article > .article-hero::before {
+	background-image:
+		linear-gradient(rgba(232, 223, 201, 0.88), rgba(232, 223, 201, 0.94)),
+		var(--page-photo);
+}
+
 .hero-content {
 	max-width: 700px;
 }
@@ -170,12 +346,66 @@ h3 {
 
 .card-placeholder {
 	display: grid;
+	position: relative;
 	min-height: 180px;
 	place-items: center;
+	overflow: hidden;
 	color: white;
 	background: var(--pine);
 	font-size: 2rem;
 	font-style: italic;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.home-services .card-placeholder,
+.home-inspiration .card-placeholder {
+	isolation: isolate;
+}
+
+.home-services .card-placeholder::before,
+.home-inspiration .card-placeholder::before {
+	position: absolute;
+	z-index: -1;
+	inset: -5%;
+	content: "";
+	background-position: center;
+	background-size: cover;
+	animation: home-image-float 22s ease-in-out infinite alternate;
+	transition: filter 0.3s ease;
+}
+
+.home-services .card:hover .card-placeholder::before,
+.home-inspiration .card:hover .card-placeholder::before {
+	filter: brightness(1.12);
+}
+
+.photo-hiking::before,
+.photo-beginner::before {
+	background-image: linear-gradient(rgba(24, 63, 58, 0.32), rgba(24, 63, 58, 0.44)), url("../images/services/hiking.jpg");
+}
+
+.photo-kayaking::before {
+	background-image: linear-gradient(rgba(24, 63, 58, 0.3), rgba(24, 63, 58, 0.42)), url("../images/services/kayaking.jpg");
+}
+
+.photo-cycling::before {
+	background-image: linear-gradient(rgba(24, 63, 58, 0.3), rgba(24, 63, 58, 0.42)), url("../images/services/mountain-biking.jpg");
+}
+
+.photo-winter::before {
+	background-image: linear-gradient(rgba(24, 63, 58, 0.3), rgba(24, 63, 58, 0.42)), url("../images/services/winter.jpg");
+}
+
+.photo-courses::before {
+	background-image: linear-gradient(rgba(24, 63, 58, 0.3), rgba(24, 63, 58, 0.42)), url("../images/services/outdoor-courses.jpg");
+}
+
+.photo-destinations::before {
+	background-image: linear-gradient(rgba(24, 63, 58, 0.3), rgba(24, 63, 58, 0.42)), url("../images/articles/forest.jpg");
+}
+
+.photo-equipment::before {
+	background-image: linear-gradient(rgba(24, 63, 58, 0.3), rgba(24, 63, 58, 0.42)), url("../images/articles/day-trip-equipment.jpg");
 }
 
 .card-content {
@@ -190,6 +420,10 @@ h3 {
 	color: var(--pine);
 	font-family: Arial, sans-serif;
 	font-weight: bold;
+}
+
+.article-list-link {
+	margin-top: 2rem;
 }
 
 .cta {
@@ -211,9 +445,10 @@ h3 {
 .card-image {
 	display: block;
 	width: 100%;
-	height: min(70vh, 620px);
+	height: auto;
+	aspect-ratio: 4 / 3;
 	object-fit: cover;
-	object-position: 55% center;
+	object-position: center;
 }
 
 .service-hero {
@@ -232,6 +467,24 @@ h3 {
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
+	animation: home-image-float 26s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.home-hero::before,
+	.home-services::before,
+	.home-inspiration::before,
+	.home-cta::before,
+	.home-services .card-placeholder::before,
+	.home-inspiration .card-placeholder::before,
+	.service-hero-image,
+	body[data-page]:not([data-page="index.html"]) main > .hero::before,
+	body[data-page]:not([data-page="index.html"]) main > .section::before,
+	body[data-page]:not([data-page="index.html"]) main > .cta::before,
+	body[data-page]:not([data-page="index.html"]) main > article > .article-hero::before,
+	body[data-page]:not([data-page="index.html"]) main > article > .article-layout::before {
+		animation: none;
+	}
 }
 
 .service-hero-overlay {

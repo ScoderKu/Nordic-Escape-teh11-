@@ -24,7 +24,7 @@ $faqItems = [
 	],
 	[
 		'question' => 'Miten teen varauksen?',
-		'answer' => 'Varsinaista verkkovarausjärjestelmää ei ole vielä käytössä. Voit tällä hetkellä lähettää kyselyn yhteydenottolomakkeen kautta. Varausprosessi voidaan lisätä sivustolle myöhemmässä vaiheessa.',
+		'answer' => 'Varsinaista verkkovarausjärjestelmää tai toimivaa yhteydenottolomaketta ei ole vielä käytössä. Voit tiedustella palveluista sähköpostitse osoitteesta Khoi@nordicescape.fi.',
 	],
 	[
 		'question' => 'Mitä tapahtuu, jos sää on huono?',
@@ -36,7 +36,7 @@ $faqItems = [
 	],
 	[
 		'question' => 'Miten voin ottaa yhteyttä?',
-		'answer' => 'Voit ottaa yhteyttä Nordic Escapeen yhteystietosivun lomakkeella. Varsinaiset sähköposti-, puhelin- ja muut yhteystiedot täydennetään sivustolle myöhemmin.',
+		'answer' => 'Voit ottaa yhteyttä sähköpostitse osoitteeseen Khoi@nordicescape.fi tai puhelimitse numeroon 040 123 4567. Yhteydenottolomaketta ei vielä ole kytketty viestien lähettämiseen.',
 	],
 ];
 

@@ -1,6 +1,12 @@
 <?php
 $pageTitle = 'Yhteystiedot';
 $basePath = '';
+$formStatus = '';
+
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
+	$formStatus = 'Lomaketta ei vielä voi lähettää. Ota yhteyttä sähköpostitse osoitteeseen Khoi@nordicescape.fi.';
+}
+
 require 'includes/header.php';
 ?>
 
@@ -29,7 +35,7 @@ require 'includes/header.php';
 			</div>
 
 			<div class="contact-form-wrapper">
-				<form action="contact.php" method="post">
+				<form action="contact.php" method="post" id="contact-form" class="contact-form">
 					<div class="form-field">
 						<label for="name">Nimi</label>
 						<input
@@ -103,7 +109,7 @@ require 'includes/header.php';
 
 					<p class="form-error" id="privacy-error" aria-live="polite"></p>
 					<button type="submit" class="button button-primary">Lähetä viesti</button>
-					<p id="form-status" class="form-status" aria-live="polite"></p>
+					<p id="form-status" class="form-status" aria-live="polite"><?= htmlspecialchars($formStatus) ?></p>
 				</form>
 			</div>
 		</div>
