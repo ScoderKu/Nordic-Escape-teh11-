@@ -5,7 +5,7 @@ $basePath = '../';
 
 $service = [
 	'title' => 'Vaellusretket',
-	'image' => 'images/services/hiking.jpg',
+	'image' => '/images/services/hiking.jpg',
 	'imageAlt' => 'Vaeltaja metsämaisemassa',
 	'intro' => 'Hidasta hetkeksi ja lähde tutustumaan pohjoisen luontoon.',
 	'heading' => 'Löydä oma polkusi luontoon',

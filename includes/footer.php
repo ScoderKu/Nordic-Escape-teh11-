@@ -20,7 +20,7 @@
 			<ul>
 				<li><a href="faq.php">FAQ</a></li>
 				<li><a href="contact.php">Yhteystiedot</a></li>
-				<li><a href="privacy.php">Tietosuoja</a></li>
+				<li><a href="<?= htmlspecialchars($basePath) ?>privacy.php">Tietosuoja</a></li>
 			</ul>
 		</div>
 	</div>

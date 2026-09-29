@@ -97,7 +97,7 @@ require 'includes/header.php';
 						>
 						<label for="privacy">
 							Olen tutustunut
-							<a href="privacy.html">tietosuojaselosteeseen</a>.
+							<a href="privacy.php">tietosuojaselosteeseen</a>.
 						</label>
 					</div>
 

@@ -5,7 +5,7 @@ $basePath = '../';
 
 $service = [
 	'title' => 'Outdoor-kurssit',
-	'image' => 'images/services/outdoor-courses.jpg',
+	'image' => '/images/services/outdoor-courses.jpg',
 	'imageAlt' => 'Outdoor-taitojen harjoittelua luonnossa',
 	'intro' => 'Kehitä taitojasi ja lisää varmuutta luonnossa liikkumiseen.',
 	'heading' => 'Opi uusia outdoor-taitoja',

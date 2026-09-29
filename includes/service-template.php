@@ -19,7 +19,7 @@ require __DIR__ . '/header.php';
 		</div>
 	</section>
 
-	<section class="section">
+	<section class="section section-light service-details">
 		<div class="container service-layout">
 			<div class="service-main">
 				<p class="section-label">Elämys</p>

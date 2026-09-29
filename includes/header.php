@@ -29,6 +29,7 @@ $basePath = $basePath ?? '';
 					<li><a href="<?= htmlspecialchars($basePath) ?>gallery.php">Galleria</a></li>
 					<li><a href="<?= htmlspecialchars($basePath) ?>faq.php">FAQ</a></li>
 					<li><a href="<?= htmlspecialchars($basePath) ?>contact.php">Yhteystiedot</a></li>
+					<li><a href="<?= htmlspecialchars($basePath) ?>privacy.php">Tietosuoja</a></li>
 				</ul>
 			</nav>
 		</div>

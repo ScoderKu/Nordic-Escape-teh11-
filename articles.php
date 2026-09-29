@@ -8,7 +8,7 @@ $articles = [
 	[
 		'title' => 'Aloittelijan opas retkeilyyn',
 		'category' => 'Retkeily',
-		'image' => 'images/articles/beginner-hiking.jpg',
+		'image' => '/images/articles/hiking.jpg',
 		'imageAlt' => 'Retkeilijä kulkemassa metsäpolulla',
 		'excerpt' => 'Ensimmäisen retken ei tarvitse olla pitkä tai vaikea.',
 		'url' => 'articles/beginner-hiking.php',
@@ -16,7 +16,7 @@ $articles = [
 	[
 		'title' => 'Mitä mukaan päiväretkelle?',
 		'category' => 'Varusteet',
-		'image' => 'images/articles/day-trip-equipment.jpg',
+		'image' => '/images/articles/day-trip-equipment.jpg',
 		'imageAlt' => 'Retkeilyvarusteita päiväretkelle',
 		'excerpt' => 'Aloita pakkaaminen retken tarpeista ja olosuhteista.',
 		'url' => 'articles/day-trip-equipment.php',
@@ -24,7 +24,7 @@ $articles = [
 	[
 		'title' => 'Turvallinen vaellus luonnossa',
 		'category' => 'Retkeily',
-		'image' => 'images/articles/hiking-safety.jpg',
+		'image' => '/images/articles/hiking-safety.jpg',
 		'imageAlt' => 'Retkeilijä suunnittelemassa reittiä',
 		'excerpt' => 'Hyvä retki alkaa valmistautumisesta.',
 		'url' => 'articles/hiking-safe.php',
@@ -32,7 +32,7 @@ $articles = [
 	[
 		'title' => 'Retkeily talvella',
 		'category' => 'Talvi',
-		'image' => 'images/articles/winter-hiking.jpg',
+		'image' => '/images/articles/winter-hiking.jpg',
 		'imageAlt' => 'Retkeilijä lumisessa metsässä',
 		'excerpt' => 'Talvinen luonto vaatii tavallista enemmän suunnittelua.',
 		'url' => 'articles/winter-hiking.php',
@@ -40,7 +40,7 @@ $articles = [
 	[
 		'title' => 'Löydä seuraava luontokohteesi Suomessa',
 		'category' => 'Matkailu',
-		'image' => 'images/articles/destinations-finland.jpg',
+		'image' => '/images/articles/forest.jpg',
 		'imageAlt' => 'Suomalainen järvi- ja metsämaisema',
 		'excerpt' => 'Etsi omaan matkustustyyliisi sopiva luontokokemus.',
 		'url' => 'articles/destinations-finland.php',

@@ -7,42 +7,42 @@ require 'includes/header.php';
 
 $galleryImages = [
 	[
-		'src' => 'images/gallery/hiking.jpg',
+		'src' => '/images/gallery/hiking.jpg',
 		'alt' => 'Retkeilijä luonnon keskellä',
 		'caption' => 'Retkeily',
 	],
 	[
-		'src' => 'images/gallery/lake.jpg',
+		'src' => '/images/gallery/lake.jpg',
 		'alt' => 'Järvimaisema suomalaisessa luonnossa',
 		'caption' => 'Järvimaisema',
 	],
 	[
-		'src' => 'images/gallery/kayaking.jpg',
+		'src' => '/images/gallery/kayaking.jpg',
 		'alt' => 'Meloja järvellä',
 		'caption' => 'Melonta',
 	],
 	[
-		'src' => 'images/gallery/forest.jpg',
+		'src' => '/images/gallery/forest.jpg',
 		'alt' => 'Vihreä metsämaisema',
 		'caption' => 'Metsä',
 	],
 	[
-		'src' => 'images/gallery/cycling.jpg',
+		'src' => '/images/gallery/cycling.jpg',
 		'alt' => 'Maastopyöräilijä metsäpolulla',
 		'caption' => 'Maastopyöräily',
 	],
 	[
-		'src' => 'images/gallery/winter.jpg',
+		'src' => '/images/gallery/winter.jpg',
 		'alt' => 'Luminen metsä talvella',
 		'caption' => 'Talvi',
 	],
 	[
-		'src' => 'images/gallery/campfire.jpg',
+		'src' => '/images/gallery/campfire.jpg',
 		'alt' => 'Nuotio luonnon keskellä',
 		'caption' => 'Luontoelämys',
 	],
 	[
-		'src' => 'images/gallery/landscape.jpg',
+		'src' => '/images/gallery/landscape.jpg',
 		'alt' => 'Pohjoismainen luontomaisema',
 		'caption' => 'Pohjoisen maisemat',
 	],
